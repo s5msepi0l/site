@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">  
+    <title>Upload files</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/upload.css" />
+    <script src="/static/script/upload.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="content_input"> 
+  
+      <form id="content_form">
+        <label for="name">Name: </label>
+          <input type="text" id="name" name="name" required /> <br/>
+
+        <br/> <label for="file_input">Thumbnail</label>
+          <input id="thumbnail" type="file" name="file_input" accept ="-jpg .jpeg .png" onchange="img_preview(event)"> 
+
+          <div id="preview_img" > 
+            <img src="/static/default_image.jpeg" width="300" height="300" alt="default_img"> 
+          </div >
+
+          <div class="video_dv">
+            <label for="video_input"> Video (optional) </label>
+              <input form="content_form" type="file" id="video" name="video_input" accept="video/*">
+          </div>
+
+        <br/><button id="upload_btn" type="submit"> Upload </button> 
+      </form>
+  
+      <div class="ingrediants">
+        <label for="input"> Ingrediants </label>
+        <input type="text" name="input" id="list_input">
+        <button onclick="add_list()"> Add </button> 
+
+        <ul id="ingrediants_list"> </ul>
+      </div>
+
+      <div class="description">
+        <label for="description">Description: </label> <br/>
+          <textarea form="content_form" id="description" name="description" placeholder="Beskriv: "cols="75" rows="30"></textarea>
+      </div>
+  
+    </div>
+
+    <div class="content_preview">
+      <h3 id="preview_text"> Live preview </h3>
+    </div>
+
+    <br/><h3 id="result">__CLIENT_STD_RES__</h3>
+
+  </body>
+</html>

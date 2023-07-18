@@ -1,0 +1,102 @@
+body {
+	background-color: rgb(200, 200, 200);
+	overflow: auto;
+}
+
+.Menu_bar {
+	background-color: white; /* janky asf */
+	padding: 25px;
+	border: 50px black;
+	border-radius: 50px;
+	margin: -25px;
+}
+
+.Menu_bar p {
+	text-align: right;
+}
+
+.recepie_content {
+	display: grid;
+	flex-direction: column;
+}
+
+#image_buffer {
+	padding-top: 400px;
+	width: 1500px;
+	height: 1000px;
+	overflow: visible;
+
+	display: grid;
+	grid-template-columns: repeat(4, minmax(20px, 1fr));
+	list-style: none;
+	padding-top: 50px;
+	margin: 0;
+}
+
+ul li {
+	display: inline-block;
+	margin-bottom: -200px;
+}
+
+.Login_dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Login_button {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.Login_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.Login_content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Login_content input,
+.Login_content button {
+  margin-bottom: 10px;
+}
+
+.Login_dropdown:hover .Login_content {
+  display: block;
+}
+
+#logout_btn {
+	border: solid black;
+	border-radius: 5px;
+	
+
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+#Login_button {
+	border: solid black;
+	border-radius: 5px;
+	
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15;
+	margin: 4px 2px;
+	cursor: pointer;
+}

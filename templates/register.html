@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>  Register  </title>
+
+		<link rel="stylesheet" type="text/css" href="/static/style/register.css" />
+	  	<script src="/static/script/register.js"></script>
+	</head>
+
+	<body>
+		<h1 id="headline"> Register account </h1>
+
+		<form id="client_register">
+			<label for="email"> Email </label>
+				<input type="email" name="email" required> <br>
+
+			<label for="username"> Username </label>
+				<input type="text" id="username" name="username" required> <br>
+
+			<label for="password"> Password </label>
+				<input type="password" id="password" name="password"> <br> <br>
+
+
+				<label for="dropdown">  Select gender  </label>
+				<select id="dropdown" name="dropdown">
+					<option value="option1">Male (Drive(2011)Ryan gosling)</option>
+					<option value="option2">Female (born male but undervent botched circumcision)</option>
+					<option value="option3">Female (ReactJS/rust programmer)</option>
+				    <option value="option4">ESP32-D0WDR2-V3 microcontroller</option>
+				    <option value="option5">Kovjoki bögsned</option>
+				</select>
+
+
+			<input type="submit" value="Register">
+		</form>
+
+		<h1 id="result">__CLIENT_STD_OUT__</h1>
+
+	</body>
+
+</html>

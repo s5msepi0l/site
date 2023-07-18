@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(225, 225, 225);
+}
+
+.description {
+    position: fixed;
+
+    right: 1000px;
+    bottom: 430px;
+}
+
+#upload_btn {
+    position: fixed;
+
+    bottom: 50px;
+    right: 1000px;
+}
+
+#result {
+    position: fixed;
+
+    bottom: 35px;    
+    right: 1075px;
+}
+
+.content_preview {
+    position: fixed;
+
+    border: 10px solid black;
+    border-radius: 50px;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 800px;
+    height: 850px;
+}
+
+.content_preview #preview_text {
+    position: fixed;
+    font-size: 40px;
+    
+    right: 550px;
+    bottom: 875px;   
+}
+
+.video_dv {
+    position: fixed;
+
+    right: 1150px;
+    bottom: 400px;
+}

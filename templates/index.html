@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+		<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
+	</head>
+
+	<body>
+		<div class="Menu_bar">
+			<div class="Upload_dv">
+				<a href="/templates/upload.html">
+					<p> Upload </p>
+				</a> 
+			</div>
+			
+			<div class="Register_dv">
+				<a href="/templates/register.html">
+					<p> Register </p>
+				</a>
+			</div>	
+
+			<div class="Logout">	
+					<button id="logout_btn" onclick="logout()"> Logout </button>
+				</div>
+
+			<div class="Login_dropdown">
+				<button id="Login_button"> Login </button>
+				<div class="Login_content">
+					<form id="client_register">
+						<label for="username"> Username </label>
+						<input type="text" id="username" name="username" required>
+					
+						<label for ="password"> Password </label>
+						<input type="password" name="password" required>
+
+						<h3 id="result">__CLIENT_STD_OUT__</h3>
+
+						<button type="submit"> Login </button>
+					</form>
+					
+				</div>
+				
+			</div>
+
+		</div>
+		
+		<div class="recepie_content">
+			<ul id="image_buffer">
+			</ul>
+		</div>
+		
+		<script src="{{ url_for('static', filename='script/script.js') }}"> lalalalal</script>	
+	</body>
+</html>
